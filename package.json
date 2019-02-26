@@ -1,0 +1,7 @@
+{
+    "name": "serverless-custom-cloudformation-resource-test1",
+    "version": "1.0.0",
+    "dependencies": {
+        "cfn-custom-resource": "^4.0.11"
+    }
+}

@@ -1,0 +1,13 @@
+service: sls-custom-cf-res-test1 
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: eu-west-1
+  environment:
+    variable1: value1
+
+functions:
+  hello:
+    handler: handler.hello

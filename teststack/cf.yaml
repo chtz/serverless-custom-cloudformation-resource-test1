@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A sample template
+Parameters:
+  CustomResLambdaARN:
+    Type: String
+Resources:
+  Custom:
+    Type: "Custom::String"
+    Version: "1.0"
+    Properties:
+      ServiceToken: !Ref CustomResLambdaARN
+Outputs:
+  MyOut:
+    Value: !GetAtt Custom.ImportantInfo
